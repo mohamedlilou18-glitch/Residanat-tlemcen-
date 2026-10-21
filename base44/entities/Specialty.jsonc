@@ -1,0 +1,37 @@
+{
+  "name": "Specialty",
+  "type": "object",
+  "properties": {
+    "order": {
+      "type": "number",
+      "description": "Ordre d'affichage"
+    },
+    "number": {
+      "type": "string",
+      "description": "Num\u00e9ro officiel de la sp\u00e9cialit\u00e9"
+    },
+    "name": {
+      "type": "string",
+      "description": "Nom de la sp\u00e9cialit\u00e9"
+    },
+    "terrain": {
+      "type": "string",
+      "description": "Terrain de formation"
+    },
+    "posts": {
+      "type": "number",
+      "description": "Nombre de postes ouverts"
+    },
+    "checked": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "Index des postes coch\u00e9s"
+    }
+  },
+  "required": [
+    "name",
+    "posts"
+  ]
+}
